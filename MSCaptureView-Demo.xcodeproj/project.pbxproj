@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		418B943C24E8B2A40014101E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B943B24E8B2A40014101E /* ViewController.swift */; };
 		418B943E24E8B2A60014101E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418B943D24E8B2A60014101E /* Assets.xcassets */; };
 		418B944124E8B2A60014101E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418B943F24E8B2A60014101E /* Main.storyboard */; };
+		418B944B24E8BD0E0014101E /* MSCaptureView in Frameworks */ = {isa = PBXBuildFile; productRef = 418B944A24E8BD0E0014101E /* MSCaptureView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418B944B24E8BD0E0014101E /* MSCaptureView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +81,9 @@
 			dependencies = (
 			);
 			name = "MSCaptureView-Demo";
+			packageProductDependencies = (
+				418B944A24E8BD0E0014101E /* MSCaptureView */,
+			);
 			productName = "MSCaptureView-Demo";
 			productReference = 418B943624E8B2A40014101E /* MSCaptureView-Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -107,6 +112,9 @@
 				Base,
 			);
 			mainGroup = 418B942D24E8B2A40014101E;
+			packageReferences = (
+				418B944924E8BD0E0014101E /* XCRemoteSwiftPackageReference "MSCaptureView" */,
+			);
 			productRefGroup = 418B943724E8B2A40014101E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -327,6 +335,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		418B944924E8BD0E0014101E /* XCRemoteSwiftPackageReference "MSCaptureView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/magesteve/MSCaptureView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		418B944A24E8BD0E0014101E /* MSCaptureView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 418B944924E8BD0E0014101E /* XCRemoteSwiftPackageReference "MSCaptureView" */;
+			productName = MSCaptureView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 418B942E24E8B2A40014101E /* Project object */;
 }
