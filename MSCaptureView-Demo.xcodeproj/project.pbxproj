@@ -12,6 +12,8 @@
 		418B943E24E8B2A60014101E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418B943D24E8B2A60014101E /* Assets.xcassets */; };
 		418B944124E8B2A60014101E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418B943F24E8B2A60014101E /* Main.storyboard */; };
 		418B944B24E8BD0E0014101E /* MSCaptureView in Frameworks */ = {isa = PBXBuildFile; productRef = 418B944A24E8BD0E0014101E /* MSCaptureView */; };
+		418B944D24E8BFE90014101E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 418B944C24E8BFE90014101E /* README.md */; };
+		418B945024E8C0270014101E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418B944F24E8C0270014101E /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		418B944024E8B2A60014101E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		418B944224E8B2A60014101E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		418B944324E8B2A60014101E /* MSCaptureView_Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MSCaptureView_Demo.entitlements; sourceTree = "<group>"; };
+		418B944C24E8BFE90014101E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		418B944F24E8C0270014101E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418B945024E8C0270014101E /* AVFoundation.framework in Frameworks */,
 				418B944B24E8BD0E0014101E /* MSCaptureView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,8 +44,10 @@
 		418B942D24E8B2A40014101E = {
 			isa = PBXGroup;
 			children = (
+				418B944C24E8BFE90014101E /* README.md */,
 				418B943824E8B2A40014101E /* MSCaptureView-Demo */,
 				418B943724E8B2A40014101E /* Products */,
+				418B944E24E8C0270014101E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +70,14 @@
 				418B944324E8B2A60014101E /* MSCaptureView_Demo.entitlements */,
 			);
 			path = "MSCaptureView-Demo";
+			sourceTree = "<group>";
+		};
+		418B944E24E8C0270014101E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				418B944F24E8C0270014101E /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418B944D24E8BFE90014101E /* README.md in Resources */,
 				418B943E24E8B2A60014101E /* Assets.xcassets in Resources */,
 				418B944124E8B2A60014101E /* Main.storyboard in Resources */,
 			);
